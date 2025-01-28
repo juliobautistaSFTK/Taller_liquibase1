@@ -1,22 +1,23 @@
-version: '3.8'
+version: '3.1'
 
 services:
   mysql:
-    image: mysql:8.0
-    container_name: mysql-container
+    image: mysql:8
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: medida_db
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mibase1
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
     ports:
       - "3306:3306"
     volumes:
       - mysql-data:/var/lib/mysql
     networks:
-      - mysql-net
-
-networks:
-  mysql-net:
-    driver: bridge
+      - liquibase-network
 
 volumes:
   mysql-data:
+
+networks:
+  liquibase-network:
+    driver: bridge
