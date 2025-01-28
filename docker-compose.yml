@@ -15,18 +15,13 @@ services:
 
   liquibase:
     image: liquibase/liquibase
-    environment:
-      - LIQUIBASE_CHANGELOG_FILE=/liquibase/changelog/db.changelog-master.xml  # Ruta completa dentro del contenedor
-      - LIQUIBASE_DRIVER=com.mysql.cj.jdbc.Driver
-      - LIQUIBASE_URL=jdbc:mysql://mysql:3306/mibase1
-      - LIQUIBASE_USERNAME=user
-      - LIQUIBASE_PASSWORD=password
+    command: update --changeLogFile=/liquibase/changelog/db.changelog-master.xml --url=jdbc:mysql://mysql:3306/mibase1 --username=user --password=password --driver=com.mysql.cj.jdbc.Driver
     depends_on:
       - mysql
     networks:
       - liquibase-network
     volumes:
-      - ./changelog:/liquibase/changelog  # Asegúrate de que el archivo XML esté en ./changelog
+      - ./changelog:/liquibase/changelog
 
 volumes:
   mysql-data:
