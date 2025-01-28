@@ -8,10 +8,25 @@ services:
       MYSQL_PASSWORD: password
     ports:
       - "3306:3306"
-    volumes:
-      - mysql-data:/var/lib/mysql
     networks:
       - liquibase-network
+    volumes:
+      - mysql-data:/var/lib/mysql
+
+  liquibase:
+    image: liquibase/liquibase
+    environment:
+      - LIQUIBASE_CHANGELOG_FILE=db/changelog/db.changelog-master.xml
+      - LIQUIBASE_DRIVER=com.mysql.cj.jdbc.Driver
+      - LIQUIBASE_URL=jdbc:mysql://mysql:3306/mibase1
+      - LIQUIBASE_USERNAME=user
+      - LIQUIBASE_PASSWORD=password
+    depends_on:
+      - mysql
+    networks:
+      - liquibase-network
+    volumes:
+      - ./changelog:/liquibase/changelog
 
 volumes:
   mysql-data:
