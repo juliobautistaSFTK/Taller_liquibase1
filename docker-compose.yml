@@ -16,7 +16,7 @@ services:
   liquibase:
     image: liquibase/liquibase
     environment:
-      - LIQUIBASE_CHANGELOG_FILE=db/changelog/db.changelog-master.xml
+      - LIQUIBASE_CHANGELOG_FILE=changelog/db.changelog-master.xml
       - LIQUIBASE_DRIVER=com.mysql.cj.jdbc.Driver
       - LIQUIBASE_URL=jdbc:mysql://mysql:3306/mibase1
       - LIQUIBASE_USERNAME=user
