@@ -1,16 +1,7 @@
-# Usamos la imagen oficial de Liquibase
-FROM liquibase/liquibase:4.31.0
+FROM liquibase/liquibase
 
-# Establece el directorio de trabajo
-WORKDIR /liquibase
+# Copiar archivos necesarios
+COPY liquibase.properties /liquibase/
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+COPY mysql-connector-java.jar /liquibase/
 
-# Descargar el archivo JAR del conector MySQL
-RUN wget https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-8.0.29.tar.gz -O /tmp/mysql-connector-java.tar.gz
-
-# Descomprimir el archivo tar.gz descargado
-RUN tar -xvzf /tmp/mysql-connector-java.tar.gz -C /tmp/ && \
-    cp /tmp/mysql-connector-java-8.0.29/mysql-connector-java-8.0.29.jar /liquibase/lib/ && \
-    rm -rf /tmp/*
-
-# Limpiar
-RUN rm -f /tmp/mysql-connector-java.tar.gz
