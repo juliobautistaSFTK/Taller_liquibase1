@@ -13,6 +13,11 @@
                 <constraints nullable="false"/>
             </column>
         </addColumn>
+
+        <!-- Rollback para eliminar la columna 'abreviatura' -->
+        <rollback>
+            <dropColumn tableName="medidas" columnName="abreviatura"/>
+        </rollback>
     </changeSet>
 
 </databaseChangeLog>
