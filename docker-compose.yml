@@ -13,7 +13,9 @@ services:
       - liquibase-network
     volumes:
       - mysql-data:/var/lib/mysql
-
+volumes:
+  mysql-data:
+  
 networks:
   liquibase-network:
     driver: bridge
