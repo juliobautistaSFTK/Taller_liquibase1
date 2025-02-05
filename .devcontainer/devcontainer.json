@@ -3,7 +3,7 @@
   "dockerComposeFile": [
     "../docker-compose.yml"
   ],
-  "service": "nombre_del_servicio",  // Reemplaza con el nombre del servicio en tu docker-compose.yml
+  "service": "mysql",  // Reemplaza con el nombre del servicio en tu docker-compose.yml
   "workspaceFolder": "/workspace",  // Este es el directorio de trabajo dentro del contenedor
   "postCreateCommand": "docker-compose up -d",  // Este comando levantará el servicio automáticamente
   "extensions": [
