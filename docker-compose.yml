@@ -13,10 +13,25 @@ services:
       - liquibase-network
     volumes:
       - mysql-data:/var/lib/mysql
+
+  mysql-qa:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mibase_qa
+      MYSQL_USER: qa_user
+      MYSQL_PASSWORD: qa_password
+    ports:
+      - "3307:3306"  # Cambiar el puerto para evitar conflictos con el primer contenedor
+    networks:
+      - liquibase-network
+    volumes:
+      - mysql-data-qa:/var/lib/mysql
+
 volumes:
   mysql-data:
-  
+  mysql-data-qa:
+
 networks:
   liquibase-network:
     driver: bridge
-
