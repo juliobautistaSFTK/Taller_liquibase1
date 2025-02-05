@@ -1,0 +1,15 @@
+{
+  "name": "Mi proyecto",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "nombre_del_servicio", 
+  "workspaceFolder": "/workspace",
+  "settings": {
+    // Aquí puedes agregar configuraciones personalizadas
+  },
+  "postCreateCommand": "docker-compose up -d",
+  "extensions": [
+    // Lista de extensiones que deseas instalar en el contenedor
+  ]
+}
