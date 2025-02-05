@@ -1,5 +1,5 @@
 {
-  "name": "Mi proyecto",
+  "name": "Taller_liquibase1",
   "dockerComposeFile": [
     "../docker-compose.yml"
   ],
