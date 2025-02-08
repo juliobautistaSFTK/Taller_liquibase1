@@ -7,13 +7,18 @@
 
 
 
-# **Ejercicio TITULO DEL EJERCICIO**
+# **Ejercicio INTEGRACIÓN CONTINUA CON LIQUIBASE**
 
 # **Objetivo:**
-El objetivo es crear un contenedor de base de datos mysql con la versión 5.6, crear una aplicación de que permita altas, bajas y cambios a un catálogo llamado piezas auto.
+1.- Crear una nueva tabla en el ambiente de desarrollo utilizando xml y liquibase, la tabla se debe llamar distancias, con 2 campos id de tipo entero y descripción de tipo caracter de 100.
+2.- Migrar esta nueva tabla al ambiente de pruebas utilizando liquibase.
+3.- Crear un nuevo contenedor para mysql versión 8 que servirá como producción.
+4.- Migrar todos los cambios que existenen pruebas hacia producción.
+5.- Hacer commit de todos los archivos, dockerfile, xml, etc. generados, así como un screenshot de la base de datos de producción con los cambios implementados.
 
 # **Cómo evaluar:**
-Se evaluará con el resultado que muestre el Action en el repositorio del participante y con la ejecución de la solución en un Codespace.
+Se evaluará cada xml y archivos de ambientación creados tenendo un valor del 70% de la calificación.
+El screenshot de la base de datos de producción con los cambios de pruebas tendrá un valor del 30% de la calificación
 
 # Evitar el plagio
 Es de vital importancia no copiar la solución de otro colaborador, esto generará una práctica desleal y se levantará un Warning.
