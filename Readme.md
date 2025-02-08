@@ -9,7 +9,7 @@
 
 # **Ejercicio INTEGRACIÓN CONTINUA CON LIQUIBASE**
 
-# **Objetivo:**
+# **Objetivos:**
 1.- Crear una nueva tabla en el ambiente de desarrollo utilizando xml y liquibase, la tabla se debe llamar distancias, con 2 campos id de tipo entero y descripción de tipo caracter de 100.
 
 2.- Migrar esta nueva tabla al ambiente de pruebas utilizando liquibase.
