@@ -11,13 +11,18 @@
 
 # **Objetivo:**
 1.- Crear una nueva tabla en el ambiente de desarrollo utilizando xml y liquibase, la tabla se debe llamar distancias, con 2 campos id de tipo entero y descripción de tipo caracter de 100.
+
 2.- Migrar esta nueva tabla al ambiente de pruebas utilizando liquibase.
+
 3.- Crear un nuevo contenedor para mysql versión 8 que servirá como producción.
+
 4.- Migrar todos los cambios que existenen pruebas hacia producción.
+
 5.- Hacer commit de todos los archivos, dockerfile, xml, etc. generados, así como un screenshot de la base de datos de producción con los cambios implementados.
 
 # **Cómo evaluar:**
 Se evaluará cada xml y archivos de ambientación creados tenendo un valor del 70% de la calificación.
+
 El screenshot de la base de datos de producción con los cambios de pruebas tendrá un valor del 30% de la calificación
 
 # Evitar el plagio
