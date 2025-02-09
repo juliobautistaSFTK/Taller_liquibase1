@@ -9,7 +9,7 @@
 
 # **Ejercicio INTEGRACIÓN CONTINUA CON LIQUIBASE**
 
-Prerrequisito: haber tomado el taller de Integración continua de base de datos con liquibase, dado que ahi se generaran los ambientes y xml entre desarrollo y pruebas.
+Prerrequisito: Haber tomado el taller de Integración continua de base de datos con liquibase, dado que ahi se generaran los ambientes y xml entre desarrollo y pruebas.
 
 # **Objetivos:**
 1.- Crear una nueva tabla en el ambiente de desarrollo utilizando xml y liquibase, la tabla se debe llamar distancias, con 2 campos id de tipo entero y descripción de tipo caracter de 100.
