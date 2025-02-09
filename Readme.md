@@ -16,11 +16,11 @@ Prerrequisito: Haber tomado el taller de Integración continua de base de datos 
 
 2.- Migrar esta nueva tabla al ambiente de pruebas utilizando liquibase y XML.
 
-3.- Crear un nuevo contenedor para mysql versión 8 que servirá como producción con Dockerfile.
+3.- Crear un nuevo contenedor para mysql versión 8 que servirá como producción modificando el docker-compose y levantándolo de nuevo.
 
 4.- Migrar todos los cambios que existenen pruebas hacia producción por medio de liquibase y XML.
 
-5.- Hacer commit de todos los archivos, dockerfile, xml, etc. generados, así como un screenshot de la base de datos de producción con los cambios implementados.
+5.- Hacer commit de todos los archivos modificados o generados, así como un screenshot de la base de datos de producción con los cambios implementados.
 
 # **Cómo evaluar:**
 Se evaluará cada xml y archivos de ambientación creados tenendo un valor del 70% de la calificación.
