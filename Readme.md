@@ -14,11 +14,11 @@ Prerrequisito: Haber tomado el taller de Integración continua de base de datos 
 # **Objetivos:**
 1.- Crear una nueva tabla en el ambiente de desarrollo utilizando xml y liquibase, la tabla se debe llamar distancias, con 2 campos id de tipo entero y descripción de tipo caracter de 100.
 
-2.- Migrar esta nueva tabla al ambiente de pruebas utilizando liquibase.
+2.- Migrar esta nueva tabla al ambiente de pruebas utilizando liquibase y XML.
 
-3.- Crear un nuevo contenedor para mysql versión 8 que servirá como producción.
+3.- Crear un nuevo contenedor para mysql versión 8 que servirá como producción con Dockerfile.
 
-4.- Migrar todos los cambios que existenen pruebas hacia producción.
+4.- Migrar todos los cambios que existenen pruebas hacia producción por medio de liquibase y XML.
 
 5.- Hacer commit de todos los archivos, dockerfile, xml, etc. generados, así como un screenshot de la base de datos de producción con los cambios implementados.
 
