@@ -32,11 +32,6 @@ Es de vital importancia no copiar la solución de otro colaborador, esto generar
 #### Ambientación del ejercicio 
 Este ejercicio contiene instrucciones que ambientan e instalan lo necesario para el ejercicio, a excepción que el ejercicio incluya ambientar o instalar.
 
-#### Actions
-En GitHub, los Actions son una herramienta que permite automatizar flujos de trabajo dentro de un repositorio, como compilar código, ejecutar pruebas, desplegar aplicaciones, crear contenedores Docker, entre otros. Se basan en el concepto de CI/CD (Integración continua / Despliegue continuo) y te permiten definir acciones automáticas que se ejecutan en función de eventos que suceden en tu repositorio (por ejemplo, un "push" de código, la creación de un "pull request", etc.).
-Los GitHub Actions permiten definir workflows (flujos de trabajo) que se pueden configurar con archivos de definición en formato YAML dentro del directorio .github/workflows de tu repositorio. Estos workflows pueden contener varias acciones (tasks o steps), y GitHub ejecutará esas acciones en los eventos que especifiques.
-
-Este ejercicio contiene un Action, que no debe ser modificado, este action se ejecuta en cada push a la rama relacionada, en la mayoría de los ejercicios, este action compila, ejecuta pruebas unitarias y otras accciones que permiten validar el resultado del ejercicio, este resultado se toma de base para la evaluación del participante.
 
 #### Codespaces
 
