@@ -67,28 +67,8 @@ Si no aparece la sección de la terminal presiona control-ñ.
 
 ![Descripción de la imagen](../imagenes/Img21.png)
 
-Una vez que hayas terminado de resolver el ejercicio, deberás hacer push a tu rama en tu repositorio, esto disparará un action.
-
-El action está diseñado para validar el cumplimento de ciertos pasos, para ver el resultado en tu repositorio selecciona Actions.
-
-![Descripción de la imagen](../imagenes/Img22.png)
-
-Para ver el resultado del action selecciónalo.
-
-![Descripción de la imagen](../imagenes/Img23.png)
-
-Si falló el action podrás consultar el log dando click sobre el action.
-
-![Descripción de la imagen](../imagenes/Img24.png)
-
-Selecciona el action fallido para ver el detalle del log.
-
-![Descripción de la imagen](../imagenes/Img25.png)
-![Descripción de la imagen](../imagenes/Img26.png)
-
-Deberás corregir tu solución, ya que el resultado del Action es parte de tu evaluación.
-
 Para entregar tu ejercicio, debes previamente hacer el push a tu rama en tu repositorio.
+
 
 Una vez que tu solución esté en tu rama, deberás comparar tu rama local y la rama del fork, basta con agregar la palabra compare al link de tu repositorio como la siguiente imagen.
 
