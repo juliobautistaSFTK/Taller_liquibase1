@@ -28,9 +28,25 @@ services:
     volumes:
       - mysql-data-qa:/var/lib/mysql
 
+  #Componente ejercicio  
+  mysql-Prod:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mibase1
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3308:3306"  # Cambio en el puerto para evitar conflictos
+    networks:
+      - liquibase-network
+    volumes:
+      - mysql-data-Prod:/var/lib/mysql
+
 volumes:
   mysql-data:
   mysql-data-qa:
+  mysql-data-Prod:
 
 networks:
   liquibase-network:
