@@ -18,7 +18,7 @@
 
         <!-- Rollback para eliminar la tabla 'medidas' -->
         <rollback>
-            <dropTable tableName="Distancia"/>
+            <dropTable tableName="distancia"/>
         </rollback>
     </changeSet>
 
