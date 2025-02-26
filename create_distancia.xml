@@ -6,19 +6,19 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <changeSet author="usuario" id="3">
-        <createTable tableName="medidas">
+    <changeSet author="usuario" id="1">
+        <createTable tableName="distancia">
             <column name="id" type="int">
                 <constraints primaryKey="true" nullable="false"/>
             </column>
-            <column name="descripcion" type="varchar(60)">
+            <column name="descripcion" type="varchar(100)">
                 <constraints nullable="false"/>
             </column>
         </createTable>
 
-        <!-- Rollback para eliminar la tabla 'medidas' -->
+        <!-- Rollback para eliminar la tabla 'distancia' -->
         <rollback>
-            <dropTable tableName="medidas"/>
+            <dropTable tableName="distancia"/>
         </rollback>
     </changeSet>
 
