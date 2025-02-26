@@ -12,4 +12,7 @@
     <!-- Incluir el archivo add_column_medidas.xml -->
     <include file="origen/add_column_medidas.xml"/>
 
+    <!-- Se añade el xml de medidas a la migración -->
+    <include file="origen/create_distancia.xml"/>
+
 </databaseChangeLog>
