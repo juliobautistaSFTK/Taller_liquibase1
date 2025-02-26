@@ -1,0 +1,20 @@
+mysql> 
+mysql> select * from DATABASECHANGELOG;
++----+---------+-------------------------------+---------------------+---------------+----------+------------------------------------+---------------------------------+----------+------+-----------+----------+--------+---------------+
+| ID | AUTHOR  | FILENAME                      | DATEEXECUTED        | ORDEREXECUTED | EXECTYPE | MD5SUM                             | DESCRIPTION                     | COMMENTS | TAG  | LIQUIBASE | CONTEXTS | LABELS | DEPLOYMENT_ID |
++----+---------+-------------------------------+---------------------+---------------+----------+------------------------------------+---------------------------------+----------+------+-----------+----------+--------+---------------+
+| 1  | usuario | origen/create_medidas.xml     | 2025-02-26 17:14:41 |             1 | EXECUTED | 9:2bfeff56da87ec1a16bc11f94115fb1b | createTable tableName=medidas   |          | NULL | 4.31.1    | NULL     | NULL   | 0590078011    |
+| 2  | usuario | origen/add_column_medidas.xml | 2025-02-26 17:15:38 |             2 | EXECUTED | 9:e96141f8892d2d5c9113955a3f2e732f | addColumn tableName=medidas     |          | NULL | 4.31.1    | NULL     | NULL   | 0590134967    |
+| 2  | usuario | origen/create_distancia.xml   | 2025-02-26 18:34:53 |             3 | EXECUTED | 9:b8aec3d9a9078d9a4e72e931d5853097 | createTable tableName=distancia |          | NULL | 4.31.1    | NULL     | NULL   | 0594890032    |
++----+---------+-------------------------------+---------------------+---------------+----------+------------------------------------+---------------------------------+----------+------+-----------+----------+--------+---------------+
+3 rows in set (0.00 sec)
+
+mysql> 
+mysql> DESCRIBE distancia;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| id          | int          | NO   | PRI | NULL    |       |
+| descripcion | varchar(100) | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
