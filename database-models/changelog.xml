@@ -7,9 +7,12 @@
                         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
     <!-- Incluir el archivo create_medidas.xml -->
-    <include file="origen/create_medidas.xml"/>
+    <include file="origen/database-models/create_medidas.xml"/>
 
     <!-- Incluir el archivo add_column_medidas.xml -->
-    <include file="origen/add_column_medidas.xml"/>
+    <include file="origen/database-models/add_column_medidas.xml"/>
+
+    <!-- Incluir el archivo add_foreign_key_medidas.xml -->
+    <include file="origen/database-models/distancia_Tabla_26_02_2025.xml"/>
 
 </databaseChangeLog>
