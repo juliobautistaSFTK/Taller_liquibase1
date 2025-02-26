@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <include file="origen/create_distancia.xml"/>
+
+        <!-- migrar todos los datos de qa a prod se incluyen los anteriores -->
+    <include file="origen/create_medidas.xml"/>
+    <include file="origen/add_column_medidas.xml"/>
+</databaseChangeLog>
