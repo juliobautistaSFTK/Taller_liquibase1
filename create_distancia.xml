@@ -16,7 +16,8 @@
             </column>
         </createTable>
 
-        <!-- Rollback para eliminar la tabla 'medidas' -->
+
+        <!-- Rollback para eliminar la tabla 'distancia' -->
         <rollback>
             <dropTable tableName="distancia"/>
         </rollback>
