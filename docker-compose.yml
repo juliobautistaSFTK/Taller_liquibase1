@@ -27,7 +27,6 @@ services:
       - liquibase-network
     volumes:
       - mysql-data-qa:/var/lib/mysql
- 
   mysql-prod:
     image: mysql:8
     environment:
