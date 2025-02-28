@@ -41,7 +41,7 @@ services:
       - liquibase-network
     volumes:
       - mysql-data-prod:/var/lib/mysql
-
+ 
 volumes:
   mysql-data:
   mysql-data-qa:
