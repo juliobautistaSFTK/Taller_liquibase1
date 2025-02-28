@@ -27,7 +27,6 @@ services:
       - liquibase-network
     volumes:
       - mysql-data-qa:/var/lib/mysql
-
   mysql-prod:
     image: mysql:8
     environment:
@@ -36,12 +35,11 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: password
     ports:
-      - "3308:3306"  # Cambiar el puerto para evitar conflictos con el primer contenedor
+      - "3308:3306"
     networks:
       - liquibase-network
     volumes:
       - mysql-data-prod:/var/lib/mysql
-
 volumes:
   mysql-data:
   mysql-data-qa:
